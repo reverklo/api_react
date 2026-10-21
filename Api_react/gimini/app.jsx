@@ -1,0 +1,612 @@
+/* ========================================================
+   Series Finder - React 18 Application Logic
+   Assignment: ต่อยอด Form สู่ React + API
+   Data Flow: Form (Input) → API (TVmaze) → State (React) → UI
+   ======================================================== */
+
+const { useState, useEffect, useCallback, useId } = React;
+
+// Default Poster SVG Fallback when show image is missing
+const PosterFallback = ({ title }) => (
+  <div className="poster-fallback">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
+      <line x1="7" y1="2" x2="7" y2="22" />
+      <line x1="17" y1="2" x2="17" y2="22" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <line x1="2" y1="7" x2="7" y2="7" />
+      <line x1="2" y1="17" x2="7" y2="17" />
+      <line x1="17" y1="17" x2="22" y2="17" />
+      <line x1="17" y1="7" x2="22" y2="7" />
+    </svg>
+    <span style={{ fontSize: '0.8rem', opacity: 0.8 }}>ไม่มีรูปภาพ</span>
+    <span style={{ fontSize: '0.75rem', color: '#a78bfa' }}>{title}</span>
+  </div>
+);
+
+// User Journey Tracker Component (ตรงตามสไลด์โจทย์: กรอกคำค้น → ค้นหา → รอผล → ดูผล → ค้นใหม่)
+function JourneyTracker({ currentStep }) {
+  const steps = [
+    { num: 1, label: 'กรอกคำค้น' },
+    { num: 2, label: 'ค้นหา' },
+    { num: 3, label: 'รอผล' },
+    { num: 4, label: 'ดูผล' },
+    { num: 5, label: 'ค้นใหม่' },
+  ];
+
+  return (
+    <div className="journey-tracker" aria-label="User Journey ขั้นตอนการทำงาน">
+      {steps.map((step, idx) => {
+        const isCurrent = currentStep === step.num;
+        const isPassed = currentStep > step.num;
+        return (
+          <React.Fragment key={step.num}>
+            <div className={`journey-step ${isCurrent ? 'active' : ''} ${isPassed ? 'completed' : ''}`}>
+              <span className="step-num">{isPassed ? '✓' : step.num}</span>
+              <span>{step.label}</span>
+            </div>
+            {idx < steps.length - 1 && <span className="journey-arrow">→</span>}
+          </React.Fragment>
+        );
+      })}
+    </div>
+  );
+}
+
+// Quick Search Tags Component
+function QuickSearchTags({ onSelectTag, disabled }) {
+  const suggestions = ['Batman', 'Breaking Bad', 'Wednesday', 'Stranger Things', 'Naruto', 'One Piece'];
+
+  return (
+    <div className="quick-tags">
+      <span className="quick-tags-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+        </svg>
+        ลองค้นหา:
+      </span>
+      {suggestions.map((item) => (
+        <button
+          key={item}
+          type="button"
+          className="tag-btn"
+          disabled={disabled}
+          onClick={() => onSelectTag(item)}
+        >
+          {item}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+// Series Card Component
+function SeriesCard({ data, onSelect }) {
+  const show = data?.show || {};
+  const name = show.name || 'ไม่ระบุชื่อ';
+  const rating = show.rating?.average ? `${show.rating.average} / 10` : 'ไม่มีคะแนน';
+  const imageUrl = show.image?.medium || show.image?.original;
+  const status = show.status || 'Unknown';
+  const isRunning = status === 'Running';
+  const year = show.premiered ? show.premiered.slice(0, 4) : 'N/A';
+  const genres = show.genres && show.genres.length > 0 ? show.genres : ['ทั่วไป'];
+
+  // Clean summary text for preview snippet
+  const cleanSummary = show.summary
+    ? show.summary.replace(/<[^>]*>/g, '').trim()
+    : 'ไม่มีเรื่องย่อ';
+
+  return (
+    <article className="series-card" onClick={() => onSelect(show)} tabIndex={0} role="button">
+      <div className="card-poster-wrapper">
+        {imageUrl ? (
+          <img
+            src={imageUrl}
+            alt={name}
+            className="card-poster"
+            loading="lazy"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              e.currentTarget.nextElementSibling?.classList.remove('hidden');
+            }}
+          />
+        ) : (
+          <PosterFallback title={name} />
+        )}
+
+        <div className="poster-badges">
+          <span className="badge-rating">
+            ⭐ {show.rating?.average ? show.rating.average : 'N/A'}
+          </span>
+          <span className={`badge-status ${isRunning ? 'running' : 'ended'}`}>
+            {isRunning ? 'กำลังฉาย' : 'จบแล้ว'}
+          </span>
+        </div>
+      </div>
+
+      <div className="card-content">
+        <h3 className="card-title" title={name}>{name}</h3>
+        
+        <div className="card-meta-row">
+          <span>📅 {year}</span>
+          <span>•</span>
+          <span>⭐ {rating}</span>
+        </div>
+
+        <div className="card-genres">
+          {genres.slice(0, 2).map((g) => (
+            <span key={g} className="genre-chip">{g}</span>
+          ))}
+          {genres.length > 2 && <span className="genre-chip">+{genres.length - 2}</span>}
+        </div>
+
+        <p className="card-summary-snippet">{cleanSummary}</p>
+
+        <div className="card-footer-btn">
+          <span>ดูรายละเอียดเพิ่มเติม</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+// Detail Modal Component
+function DetailModal({ show, onClose }) {
+  if (!show) return null;
+
+  const imageUrl = show.image?.original || show.image?.medium;
+  const rating = show.rating?.average ? `${show.rating.average} / 10 ⭐` : 'ไม่มีคะแนน';
+  const genres = show.genres?.join(', ') || 'ไม่ระบุ';
+  const network = show.network?.name
+    ? `${show.network.name} (${show.network.country?.code || ''})`
+    : show.webChannel?.name || 'ออนไลน์ / ไม่ระบุ';
+  const runtime = show.runtime ? `${show.runtime} นาที` : show.averageRuntime ? `${show.averageRuntime} นาที (เฉลี่ย)` : 'ไม่ระบุ';
+  const premiered = show.premiered || 'ไม่ระบุ';
+  const ended = show.ended || (show.status === 'Running' ? 'กำลังออกอากาศ' : 'ไม่ระบุ');
+
+  // Handle ESC key to close modal
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [onClose]);
+
+  return (
+    <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true">
+      <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
+        <button className="modal-close" onClick={onClose} aria-label="ปิดหน้าต่าง">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+
+        <div className="modal-body">
+          <div className="modal-poster-col">
+            {imageUrl ? (
+              <img src={imageUrl} alt={show.name} />
+            ) : (
+              <PosterFallback title={show.name} />
+            )}
+          </div>
+
+          <div className="modal-info-col">
+            <h2 className="modal-title">{show.name}</h2>
+
+            <div className="modal-badges-row">
+              <span className="badge-rating">{rating}</span>
+              <span className={`badge-status ${show.status === 'Running' ? 'running' : 'ended'}`}>
+                {show.status === 'Running' ? 'กำลังออกอากาศ (Running)' : 'จบแล้ว (Ended)'}
+              </span>
+              <span className="genre-chip" style={{ background: 'rgba(255,255,255,0.08)' }}>
+                {show.type || 'Scripted'}
+              </span>
+            </div>
+
+            <div
+              className="modal-summary"
+              dangerouslySetInnerHTML={{
+                __html: show.summary || '<p>ไม่มีข้อมูลเรื่องย่อภาษาอังกฤษสำหรับเรื่องนี้</p>',
+              }}
+            />
+
+            <div className="modal-details-grid">
+              <div className="detail-item">
+                <span className="detail-label">หมวดหมู่ (Genres)</span>
+                <span className="detail-value">{genres}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">ช่อง/เครือข่าย (Network)</span>
+                <span className="detail-value">{network}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">เริ่มฉาย (Premiered)</span>
+                <span className="detail-value">{premiered}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">สิ้นสุด (Ended)</span>
+                <span className="detail-value">{ended}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">ความยาว (Runtime)</span>
+                <span className="detail-value">{runtime}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">ภาษาต้นฉบับ (Language)</span>
+                <span className="detail-value">{show.language || 'English'}</span>
+              </div>
+            </div>
+
+            <div className="modal-links">
+              {show.officialSite && (
+                <a
+                  href={show.officialSite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="modal-link-btn primary"
+                >
+                  🌐 เว็บไซต์ทางการ
+                </a>
+              )}
+              {show.url && (
+                <a
+                  href={show.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="modal-link-btn secondary"
+                >
+                  🎬 ดูบน TVmaze
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Skeleton Loading Component
+function SkeletonGrid() {
+  return (
+    <div className="skeleton-grid" aria-label="กำลังโหลดข้อมูล">
+      {[1, 2, 3, 4, 5, 6].map((i) => (
+        <div key={i} className="skeleton-card">
+          <div className="skeleton-shimmer" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// Main App Component
+function App() {
+  // 1. STATE MANAGEMENT (ตรงตามโจทย์: มี label และเก็บค่าค้นด้วย State)
+  const [query, setQuery] = useState('');                 // ค่าค้นหาที่เก็บด้วย React State
+  const [results, setResults] = useState([]);             // ผลลัพธ์ที่ได้จาก API
+  const [status, setStatus] = useState('idle');           // 'idle' | 'loading' | 'success' | 'empty' | 'error'
+  const [validationError, setValidationError] = useState(''); // ข้อความเตือนเมื่อช่องค้นหาว่าง
+  const [errorMessage, setErrorMessage] = useState('');   // ข้อความเมื่อ API Error
+  const [lastSearched, setLastSearched] = useState('');   // คำค้นล่าสุด
+  const [selectedShow, setSelectedShow] = useState(null); // ซีรีส์ที่เลือกดูใน Modal
+  const [currentStep, setCurrentStep] = useState(1);       // User Journey Step (1-5)
+
+  // 2. SEARCH HANDLER (ตรงตามโจทย์: ค้นหาได้ด้วย Search หรือ Enter หน้าไม่โหลด, ใช้ trim(), URLSearchParams, fetch async/await)
+  const performSearch = useCallback(async (searchWord) => {
+    const trimmedQuery = searchWord.trim();
+
+    // โจทย์: ใช้ trim() ตรวจค่าค้นว่างและแสดงข้อความเตือน
+    if (!trimmedQuery) {
+      setValidationError('กรุณากรอกชื่อซีรีส์ที่ต้องการค้นหา (ห้ามเว้นว่าง)');
+      setCurrentStep(1);
+      return;
+    }
+
+    // ล้างข้อความแจ้งเตือนเก่า และเริ่มสถานะค้นหา
+    setValidationError('');
+    setStatus('loading');
+    setCurrentStep(3); // Step 3: รอผล
+    setLastSearched(trimmedQuery);
+
+    try {
+      // โจทย์: สร้าง URL จากคำค้นด้วย URLSearchParams
+      const searchParams = new URLSearchParams({ q: trimmedQuery });
+      const apiUrl = `https://api.tvmaze.com/search/shows?${searchParams.toString()}`;
+
+      // โจทย์: ใช้ fetch และ async/await
+      const response = await fetch(apiUrl);
+
+      if (!response.ok) {
+        throw new Error(`เซิร์ฟเวอร์ตอบกลับรหัสข้อผิดพลาด: ${response.status} ${response.statusText}`);
+      }
+
+      const data = await response.json();
+
+      // โจทย์: มี Loading / Success / Empty / Error
+      if (!data || data.length === 0) {
+        setResults([]);
+        setStatus('empty');
+        setCurrentStep(4); // Step 4: ดูผล (ไม่พบ)
+      } else {
+        setResults(data);
+        setStatus('success');
+        setCurrentStep(4); // Step 4: ดูผล (พบผลลัพธ์)
+      }
+    } catch (err) {
+      console.error('Fetch error:', err);
+      setErrorMessage(err.message || 'ไม่สามารถเชื่อมต่อกับ TVmaze API ได้ กรุณาตรวจสอบอินเทอร์เน็ต');
+      setStatus('error');
+      setCurrentStep(4);
+    }
+  }, []);
+
+  // Form Submit Handler (ป้องกันการโหลดหน้าใหม่ด้วย preventDefault)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // ป้องกัน submit ซ้ำ
+    if (status === 'loading') return;
+    setCurrentStep(2); // Step 2: ค้นหา
+    performSearch(query);
+  };
+
+  // Quick tag click handler
+  const handleSelectTag = (tag) => {
+    setQuery(tag);
+    setValidationError('');
+    performSearch(tag);
+  };
+
+  // Clear query handler
+  const handleClear = () => {
+    setQuery('');
+    setValidationError('');
+    setCurrentStep(5); // Step 5: ค้นใหม่
+  };
+
+  // Retry handler when Error occurs
+  const handleRetry = () => {
+    if (lastSearched) {
+      performSearch(lastSearched);
+    } else {
+      performSearch(query);
+    }
+  };
+
+  return (
+    <div className="app-container">
+      {/* Background Decorative Ambient Orbs */}
+      <div className="bg-ambient" aria-hidden="true">
+        <div className="ambient-orb ambient-orb-1" />
+        <div className="ambient-orb ambient-orb-2" />
+        <div className="ambient-orb ambient-orb-3" />
+      </div>
+
+      {/* Hero Header */}
+      <header className="app-header">
+        <div className="logo-badge">
+          <span className="badge-dot" />
+          <span>TVmaze API • React 18 Real-Time Search</span>
+        </div>
+        <h1 className="app-title">
+          <span className="brand-gradient">Series</span> Finder
+        </h1>
+        <p className="app-subtitle">
+          ค้นหาซีรีส์ เรื่องย่อ นักแสดง และเรตติ้ง จากฐานข้อมูลระดับโลกด้วย React &amp; TVmaze API
+        </p>
+      </header>
+
+      {/* User Journey Tracker (ตรงตามสไลด์โจทย์) */}
+      <JourneyTracker currentStep={currentStep} />
+
+      {/* Search Form Card (ตรงตามโจทย์: มี label, เก็บค่าด้วย State, ป้องกัน submit ซ้ำ) */}
+      <section className="search-card">
+        <form onSubmit={handleSubmit} className="search-form" noValidate>
+          <label htmlFor="searchInput" className="search-label">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            ค้นหาซีรีส์ที่ต้องการ (Search Series)
+          </label>
+
+          <div className="search-input-group">
+            <div className="input-wrapper">
+              <span className="search-icon-left">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </span>
+
+              <input
+                id="searchInput"
+                type="text"
+                className="search-input"
+                placeholder="พิมพ์ชื่อซีรีส์ เช่น Batman, Breaking Bad, Wednesday..."
+                value={query}
+                disabled={status === 'loading'}
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                  if (validationError) setValidationError('');
+                  setCurrentStep(1); // Step 1: กรอกคำค้น
+                }}
+                autoComplete="off"
+              />
+
+              {query && (
+                <button
+                  type="button"
+                  className="clear-btn"
+                  onClick={handleClear}
+                  title="ล้างคำค้น"
+                  aria-label="ล้างคำค้น"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+
+            {/* ปุ่ม Search: ป้องกัน submit ซ้ำด้วย disabled={status === 'loading'} */}
+            <button
+              type="submit"
+              className="submit-btn"
+              disabled={status === 'loading'}
+            >
+              {status === 'loading' ? (
+                <>
+                  <svg className="spinner-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <circle cx="12" cy="12" r="10" strokeDasharray="31.4" strokeDashoffset="10" />
+                  </svg>
+                  <span>กำลังค้นหา...</span>
+                </>
+              ) : (
+                <>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
+                  <span>ค้นหา</span>
+                </>
+              )}
+            </button>
+          </div>
+
+          {/* แจ้งเตือนเมื่อ trim() ตรวจพบค่าว่าง */}
+          {validationError && (
+            <div className="validation-alert" role="alert">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              <span>{validationError}</span>
+            </div>
+          )}
+
+          {/* Quick Search Tag Suggestions */}
+          <QuickSearchTags onSelectTag={handleSelectTag} disabled={status === 'loading'} />
+        </form>
+
+        {/* Status Bar แสดงคำค้นและจำนวนผลลัพธ์ */}
+        {lastSearched && status !== 'loading' && (
+          <div className="status-bar">
+            <span>
+              ผลการค้นหาคำว่า <span className="status-highlight">"{lastSearched}"</span>
+              {status === 'success' && ` (${results.length} รายการ)`}
+            </span>
+            <span className="api-endpoint-badge">
+              GET /search/shows?q={encodeURIComponent(lastSearched)}
+            </span>
+          </div>
+        )}
+      </section>
+
+      {/* Results Section: ครบ 4 สถานะ (Loading / Success / Empty / Error) */}
+      <main className="results-container">
+        {/* สถานะ 1: INITIAL IDLE (ยังไม่ได้ค้นหา) */}
+        {status === 'idle' && (
+          <div className="state-box">
+            <div className="state-icon-circle empty">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <h2 className="state-title">เริ่มต้นค้นหาซีรีส์ที่คุณชื่นชอบ</h2>
+            <p className="state-desc">
+              พิมพ์ชื่อซีรีส์ในช่องด้านบน หรือคลิกที่แท็กแนะนำด้านล่างช่องค้นหา แล้วกดปุ่ม <strong>"ค้นหา"</strong> หรือกด <strong>Enter</strong>
+            </p>
+          </div>
+        )}
+
+        {/* สถานะ 2: LOADING (กำลังดึงข้อมูลจาก API) */}
+        {status === 'loading' && <SkeletonGrid />}
+
+        {/* สถานะ 3: EMPTY (ค้นหาแล้วไม่พบผลลัพธ์) */}
+        {status === 'empty' && (
+          <div className="state-box">
+            <div className="state-icon-circle empty" style={{ borderColor: 'rgba(245, 158, 11, 0.4)', color: '#fbbf24' }}>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="8" y1="12" x2="16" y2="12" />
+              </svg>
+            </div>
+            <h2 className="state-title">ไม่พบซีรีส์ที่ค้นหา</h2>
+            <p className="state-desc">
+              ไม่พบผลลัพธ์สำหรับคำว่า <strong>"{lastSearched}"</strong> กรุณาตรวจสอบตัวสะกด หรือลองค้นหาด้วยคำอื่น เช่น <em>Batman</em>, <em>Breaking Bad</em>
+            </p>
+          </div>
+        )}
+
+        {/* สถานะ 4: ERROR (เกิดข้อผิดพลาดในการเชื่อมต่อ) */}
+        {status === 'error' && (
+          <div className="state-box">
+            <div className="state-icon-circle error">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <h2 className="state-title">เกิดข้อผิดพลาดในการโหลดข้อมูล</h2>
+            <p className="state-desc">{errorMessage}</p>
+            <button type="button" className="retry-btn" onClick={handleRetry}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
+              </svg>
+              <span>ลองใหม่อีกครั้ง (Retry)</span>
+            </button>
+          </div>
+        )}
+
+        {/* สถานะ 5: SUCCESS (แสดงการ์ดซีรีส์ครบถ้วน) */}
+        {status === 'success' && (
+          <div className="results-grid">
+            {results.map((item) => (
+              <SeriesCard
+                key={item.show.id || item.show.url}
+                data={item}
+                onSelect={(show) => setSelectedShow(show)}
+              />
+            ))}
+          </div>
+        )}
+      </main>
+
+      {/* Modal Popup แสดงรายละเอียดซีรีส์เจาะลึก */}
+      {selectedShow && (
+        <DetailModal
+          show={selectedShow}
+          onClose={() => setSelectedShow(null)}
+        />
+      )}
+
+      {/* Footer ระบุแหล่งข้อมูลชัดเจนตามโจทย์ */}
+      <footer className="app-footer">
+        <p>
+          แหล่งข้อมูล: ข้อมูลทั้งหมดมาจาก{' '}
+          <a href="https://www.tvmaze.com/api" target="_blank" rel="noopener noreferrer">
+            TVmaze API
+          </a>{' '}
+          (Endpoint: <code>https://api.tvmaze.com/search/shows?q=</code>)
+        </p>
+        <p style={{ opacity: 0.6, fontSize: '0.8rem' }}>
+          งานคาบปฏิบัติ: Series Finder ต่อยอด Form สู่ React + API • Data Flow: Form → API → State → UI
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+// Render React App
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<App />);
+}
