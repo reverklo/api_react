@@ -1,0 +1,2171 @@
+[
+  {
+    "score": 1.0,
+    "show": {
+      "id": 169,
+      "url": "https://www.tvmaze.com/shows/169/breaking-bad",
+      "name": "Breaking Bad",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 60,
+      "premiered": "2008-01-20",
+      "ended": "2019-10-11",
+      "officialSite": "http://www.amc.com/shows/breaking-bad",
+      "schedule": {
+        "time": "22:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 9.2
+      },
+      "weight": 100,
+      "network": {
+        "id": 20,
+        "name": "AMC",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 18164,
+        "thetvdb": 81189,
+        "imdb": "tt0903747"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253519.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/501/1253519.jpg"
+      },
+      "summary": "<p><b>Breaking Bad</b> follows protagonist Walter White, a chemistry teacher who lives in New Mexico with his wife and teenage son who has cerebral palsy. White is diagnosed with Stage III cancer and given a prognosis of two years left to live. With a new sense of fearlessness based on his medical prognosis, and a desire to secure his family's financial security, White chooses to enter a dangerous world of drugs and crime and ascends to power in this world. The series explores how a fatal diagnosis such as White's releases a typical man from the daily concerns and constraints of normal society and follows his transformation from mild family man to a kingpin of the drug trade.</p>",
+      "updated": 1769198028,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/169"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2007806",
+          "name": "El Camino: A Breaking Bad Movie"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 2993,
+      "url": "https://www.tvmaze.com/shows/2993/stranger-things",
+      "name": "Stranger Things",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Horror",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 65,
+      "premiered": "2016-07-15",
+      "ended": "2025-12-31",
+      "officialSite": "https://www.netflix.com/title/80057281",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Wednesday"
+        ]
+      },
+      "rating": {
+        "average": 8.4
+      },
+      "weight": 100,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 48493,
+        "thetvdb": 305288,
+        "imdb": "tt4574334"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/595/1489169.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489169.jpg"
+      },
+      "summary": "<p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>",
+      "updated": 1767306162,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/2993"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3046158",
+          "name": "Chapter Eight: The Rightside Up"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 53647,
+      "url": "https://www.tvmaze.com/shows/53647/wednesday",
+      "name": "Wednesday",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Comedy",
+        "Mystery",
+        "Supernatural"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 54,
+      "premiered": "2022-11-23",
+      "ended": null,
+      "officialSite": "https://www.netflix.com/title/81231974",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 7.9
+      },
+      "weight": 100,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 397060,
+        "imdb": "tt13443470"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/586/1466410.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/586/1466410.jpg"
+      },
+      "summary": "<p>Smart, sarcastic and a little dead inside, Wednesday Addams investigates a murder spree while making new friends — and foes — at Nevermore Academy.</p>",
+      "updated": 1786227598,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/53647"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3214596",
+          "name": "Chapter VIII: This Means Woe"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 46562,
+      "url": "https://www.tvmaze.com/shows/46562/the-last-of-us",
+      "name": "The Last of Us",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Horror"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 61,
+      "premiered": "2023-01-15",
+      "ended": null,
+      "officialSite": "https://www.hbo.com/the-last-of-us",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 7.9
+      },
+      "weight": 100,
+      "network": {
+        "id": 8,
+        "name": "HBO",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.hbo.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": {
+        "name": "United States",
+        "code": "US",
+        "timezone": "America/New_York"
+      },
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 392256,
+        "imdb": "tt3581920"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/563/1409008.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/563/1409008.jpg"
+      },
+      "summary": "<p>After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.</p>",
+      "updated": 1756335044,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/46562"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3153912",
+          "name": "Convergence"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 82,
+      "url": "https://www.tvmaze.com/shows/82/game-of-thrones",
+      "name": "Game of Thrones",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Adventure",
+        "Fantasy"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 61,
+      "premiered": "2011-04-17",
+      "ended": "2019-05-19",
+      "officialSite": "http://www.hbo.com/game-of-thrones",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 8.9
+      },
+      "weight": 100,
+      "network": {
+        "id": 8,
+        "name": "HBO",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.hbo.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 24493,
+        "thetvdb": 121361,
+        "imdb": "tt0944947"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1245274.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1245274.jpg"
+      },
+      "summary": "<p>Based on the bestselling book series <i>A Song of Ice and Fire</i> by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and the savage eastern lands, to the frozen north and ancient Wall that protects the realm from the mysterious darkness beyond, the powerful families of the Seven Kingdoms are locked in a battle for the Iron Throne. This is a story of duplicity and treachery, nobility and honor, conquest and triumph. In the <b>Game of Thrones</b>, you either win or you die.</p>",
+      "updated": 1787682562,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/82"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1623968",
+          "name": "The Iron Throne"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 55138,
+      "url": "https://www.tvmaze.com/shows/55138/arcane-league-of-legends",
+      "name": "Arcane: League of Legends",
+      "type": "Animation",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 41,
+      "premiered": "2021-11-06",
+      "ended": "2024-11-23",
+      "officialSite": "https://www.netflix.com/title/81435684",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Saturday"
+        ]
+      },
+      "rating": {
+        "average": 8.5
+      },
+      "weight": 97,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 371028,
+        "imdb": "tt11126994"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/536/1340287.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/536/1340287.jpg"
+      },
+      "summary": "<p>Set in utopian Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions — and the power that will tear them apart.</p>",
+      "updated": 1737820844,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/55138"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3047365",
+          "name": "The Dirt Under Your Nails"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 46065,
+      "url": "https://www.tvmaze.com/shows/46065/one-piece",
+      "name": "One Piece",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 58,
+      "premiered": "2023-08-31",
+      "ended": null,
+      "officialSite": "https://www.netflix.com/title/80217863",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 7.7
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 392276,
+        "imdb": "tt11737520"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/617/1543011.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/617/1543011.jpg"
+      },
+      "summary": "<p>With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure in this live-action adaptation of the popular manga.</p>",
+      "updated": 1790707275,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/46065"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3424717",
+          "name": "Deer and Loathing in Drum Kingdom"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 37336,
+      "url": "https://www.tvmaze.com/shows/37336/shogun",
+      "name": "Shōgun",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Adventure",
+        "History"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 59,
+      "premiered": "2024-02-27",
+      "ended": null,
+      "officialSite": "https://www.hulu.com/series/shogun-5422a5f9-e4f1-475e-9217-65e8249388d0",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Tuesday"
+        ]
+      },
+      "rating": {
+        "average": 8.5
+      },
+      "weight": 100,
+      "network": null,
+      "webChannel": {
+        "id": 2,
+        "name": "Hulu",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.hulu.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 392573,
+        "imdb": "tt2788316"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/506/1265637.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/506/1265637.jpg"
+      },
+      "summary": "<p><b>Shōgun </b>is set in Japan in the year 1600 at the dawn of a century-defining civil war. Lord Yoshii Toranaga is fighting for his life as his enemies on the Council of Regents unite against him, when a mysterious European ship is found marooned in a nearby fishing village.</p>",
+      "updated": 1786038878,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/37336"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2786512",
+          "name": "A Dream of a Dream"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 49041,
+      "url": "https://www.tvmaze.com/shows/49041/fallout",
+      "name": "Fallout",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 57,
+      "premiered": "2024-04-10",
+      "ended": null,
+      "officialSite": "https://www.amazon.com/dp/B0CN4HV16N",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Wednesday"
+        ]
+      },
+      "rating": {
+        "average": 7.9
+      },
+      "weight": 100,
+      "network": null,
+      "webChannel": {
+        "id": 3,
+        "name": "Prime Video",
+        "country": null,
+        "officialSite": "https://www.primevideo.com"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 416744,
+        "imdb": "tt12637874"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/599/1499142.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/599/1499142.jpg"
+      },
+      "summary": "<p>Based on one of the greatest video game series of all time, <b>Fallout</b> is the story of haves and have nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, a peaceful denizen from a cozy fallout shelter is forced to return to the surface and is shocked to discover the wasteland waiting for her.</p>",
+      "updated": 1781053226,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/49041"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3335212",
+          "name": "The Strip"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 335,
+      "url": "https://www.tvmaze.com/shows/335/sherlock",
+      "name": "Sherlock",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery"
+      ],
+      "status": "Ended",
+      "runtime": 90,
+      "averageRuntime": 90,
+      "premiered": "2010-07-25",
+      "ended": "2017-01-15",
+      "officialSite": "http://www.bbc.co.uk/programmes/b018ttws",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 8.9
+      },
+      "weight": 99,
+      "network": {
+        "id": 12,
+        "name": "BBC One",
+        "country": {
+          "name": "United Kingdom",
+          "code": "GB",
+          "timezone": "Europe/London"
+        },
+        "officialSite": "https://www.bbc.co.uk/bbcone"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 23433,
+        "thetvdb": 176941,
+        "imdb": "tt1475582"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/171/428042.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/171/428042.jpg"
+      },
+      "summary": "<p>Sherlock Holmes and Dr. John Watson's adventures in 21st Century London. A thrilling, funny, fast-paced contemporary reimagining of the Arthur Conan Doyle classic.</p>",
+      "updated": 1753373860,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/335"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1004191",
+          "name": "The Final Problem"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 757,
+      "url": "https://www.tvmaze.com/shows/757/batman-the-animated-series",
+      "name": "Batman: The Animated Series",
+      "type": "Animation",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": 30,
+      "averageRuntime": 30,
+      "premiered": "1992-09-05",
+      "ended": "1998-03-17",
+      "officialSite": null,
+      "schedule": {
+        "time": "10:00",
+        "days": [
+          "Saturday"
+        ]
+      },
+      "rating": {
+        "average": 8.5
+      },
+      "weight": 96,
+      "network": {
+        "id": 4,
+        "name": "FOX",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.fox.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 2721,
+        "thetvdb": 76168,
+        "imdb": "tt0103359"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/80/202273.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/80/202273.jpg"
+      },
+      "summary": "<p>Experience the thrills of vigilante justice as millionaire playboy Bruce Wayne and alter-ego Batman protect the streets of Gotham City from a host of villains including archnemesis The Joker, deadly-beautiful Poison Ivy and primitive Killer Croc in a fresh take on super hero storytelling. Intelligent, dramatic stories, unique characters and sharp dialog shaped this edgy TV series into an Emmy®-winning powerhouse that brought the Caped Crusader out of the dark alleys of TV history and into the present for fans of all ages.</p>",
+      "updated": 1748551264,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/757"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2140434",
+          "name": "Batman & Mr. Freeze: SubZero"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.0,
+    "show": {
+      "id": 38753,
+      "url": "https://www.tvmaze.com/shows/38753/avatar-the-last-airbender",
+      "name": "Avatar: The Last Airbender",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 59,
+      "premiered": "2024-02-22",
+      "ended": null,
+      "officialSite": "https://www.netflix.com/title/80237957",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 7.4
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 385925,
+        "imdb": "tt9018736"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/633/1582667.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/633/1582667.jpg"
+      },
+      "summary": "<p>A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.</p>",
+      "updated": 1784401053,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/38753"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3583546",
+          "name": "Something Broken"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.190583,
+    "show": {
+      "id": 28276,
+      "url": "https://www.tvmaze.com/shows/28276/the-witcher",
+      "name": "The Witcher",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Fantasy"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 57,
+      "premiered": "2019-12-20",
+      "ended": null,
+      "officialSite": "https://www.netflix.com/title/80189685",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 7.8
+      },
+      "weight": 100,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 362696,
+        "imdb": "tt5180504"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/594/1486674.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/594/1486674.jpg"
+      },
+      "summary": "<p>Based on the best-selling fantasy series, <b>The Witcher</b> is an epic tale of fate and family. Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts. But when destiny hurtles him toward a powerful sorceress, and a young princess with a dangerous secret, the three must learn to navigate the increasingly volatile Continent together.</p>",
+      "updated": 1791779039,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/28276"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3366429",
+          "name": "Baptism of Fire"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.1904941,
+    "show": {
+      "id": 15299,
+      "url": "https://www.tvmaze.com/shows/15299/the-boys",
+      "name": "The Boys",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Adult"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 63,
+      "premiered": "2019-07-26",
+      "ended": "2026-05-20",
+      "officialSite": "https://www.amazon.com/dp/B07QQQ52B3",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Wednesday"
+        ]
+      },
+      "rating": {
+        "average": 8.3
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 3,
+        "name": "Prime Video",
+        "country": null,
+        "officialSite": "https://www.primevideo.com"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 355567,
+        "imdb": "tt1190634"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/619/1547768.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/619/1547768.jpg"
+      },
+      "summary": "<p>In a world where superheroes embrace the darker side of their massive celebrity and fame, <b>The Boys</b> centres on a group of vigilantes known informally as \"The Boys,\" who set out to take down corrupt superheroes with no more than blue collar grit and a willingness to fight dirty.</p>",
+      "updated": 1783189031,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/15299"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3464785",
+          "name": "Blood and Bone"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.1904941,
+    "show": {
+      "id": 269,
+      "url": "https://www.tvmaze.com/shows/269/peaky-blinders",
+      "name": "Peaky Blinders",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Crime",
+        "History"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 61,
+      "premiered": "2013-09-12",
+      "ended": null,
+      "officialSite": "http://www.bbc.co.uk/programmes/b045fz8r",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 8.5
+      },
+      "weight": 100,
+      "network": {
+        "id": 12,
+        "name": "BBC One",
+        "country": {
+          "name": "United Kingdom",
+          "code": "GB",
+          "timezone": "Europe/London"
+        },
+        "officialSite": "https://www.bbc.co.uk/bbcone"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 37240,
+        "thetvdb": 270915,
+        "imdb": "tt2442560"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/48/122213.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/48/122213.jpg"
+      },
+      "summary": "<p>An epic gangster drama set in the lawless streets of 1920s Birmingham.</p>",
+      "updated": 1778696206,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/269"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3476341",
+          "name": "Peaky Blinders: The Immortal Man"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.190583,
+    "show": {
+      "id": 305,
+      "url": "https://www.tvmaze.com/shows/305/black-mirror",
+      "name": "Black Mirror",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Science-Fiction",
+        "Thriller"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 62,
+      "premiered": "2011-12-04",
+      "ended": null,
+      "officialSite": "https://www.netflix.com/title/70264888",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 8.4
+      },
+      "weight": 100,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 30348,
+        "thetvdb": 253463,
+        "imdb": "tt2085059"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/564/1411764.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/564/1411764.jpg"
+      },
+      "summary": "<p>Over the last ten years, technology has transformed almost every aspect of our lives before we've had time to stop and question it. In every home; on every desk; in every palm - a plasma screen; a monitor; a smartphone--a black mirror of our 21st Century existence. <b>Black Mirror</b> is a contemporary British re-working of <i>The Twilight Zone</i> with stories that tap into the collective unease about our modern world.</p>",
+      "updated": 1767985660,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/305"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3172697",
+          "name": "USS Callister: Into Infinity"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.8973323,
+    "show": {
+      "id": 30770,
+      "url": "https://www.tvmaze.com/shows/30770/chernobyl",
+      "name": "Chernobyl",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 70,
+      "premiered": "2019-05-06",
+      "ended": "2019-06-03",
+      "officialSite": "https://www.hbo.com/chernobyl",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Monday"
+        ]
+      },
+      "rating": {
+        "average": 8.9
+      },
+      "weight": 99,
+      "network": {
+        "id": 8,
+        "name": "HBO",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.hbo.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 360893,
+        "imdb": "tt7366338"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/193/482599.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/193/482599.jpg"
+      },
+      "summary": "<p><b>Chernobyl</b> dramatizes the true story of one of the worst man-made catastrophes in history and tells of the brave men and women who sacrificed to save Europe from unimaginable disaster. The miniseries focuses on the heartbreaking scope of the nuclear plant disaster that occurred in Ukraine in April 1986, revealing how and why it happened and telling the shocking, remarkable stories of the heroes who fought and fell.</p>",
+      "updated": 1657658077,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/30770"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1634384",
+          "name": "Vichnaya Pamyat"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.8974221,
+    "show": {
+      "id": 23470,
+      "url": "https://www.tvmaze.com/shows/23470/succession",
+      "name": "Succession",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Family"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 63,
+      "premiered": "2018-06-03",
+      "ended": "2023-05-28",
+      "officialSite": "https://www.hbo.com/succession",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 7.5
+      },
+      "weight": 99,
+      "network": {
+        "id": 8,
+        "name": "HBO",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.hbo.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 338186,
+        "imdb": "tt7660850"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/453/1134275.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/453/1134275.jpg"
+      },
+      "summary": "<p><b>Succession </b>follows the saga of the Roys, a fictional, American global-media family that is not only rich and powerful but also powerfully dysfunctional. The drama will explore family loyalty, international business and the perils of power in the 21st century.</p><p>Power, politics, money...it's all in the family in this provocative, funny series about a highly dysfunctional dynasty. When Logan Roy, CEO of one of the world's largest media and entertainment conglomerates, considers retirement, each of his four grown children follows a personal agenda that doesn't always sync with those of their siblings--or of their father.</p>",
+      "updated": 1745688423,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/23470"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2479931",
+          "name": "With Open Eyes"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.415239,
+    "show": {
+      "id": 618,
+      "url": "https://www.tvmaze.com/shows/618/better-call-saul",
+      "name": "Better Call Saul",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Legal"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 64,
+      "premiered": "2015-02-08",
+      "ended": "2022-08-15",
+      "officialSite": "https://www.amc.com/shows/better-call-saul--1002228",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Monday"
+        ]
+      },
+      "rating": {
+        "average": 8.6
+      },
+      "weight": 99,
+      "network": {
+        "id": 20,
+        "name": "AMC",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 37780,
+        "thetvdb": 273181,
+        "imdb": "tt3032476"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253515.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/501/1253515.jpg"
+      },
+      "summary": "<p><b>Better Call Saul</b> is the prequel to the award-winning series Breaking Bad, set six years before Saul Goodman became Walter White's lawyer. When we meet him, the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and often against, Jimmy is \"fixer\" Mike Ehrmantraut, a beloved character introduced in Breaking Bad. The series will track Jimmy's transformation into Saul Goodman, the man who puts \"criminal\" in \"criminal lawyer.</p>",
+      "updated": 1786194940,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/618"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2355731",
+          "name": "Saul Gone"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.1903152,
+    "show": {
+      "id": 48945,
+      "url": "https://www.tvmaze.com/shows/48945/cyberpunk-edgerunners",
+      "name": "Cyberpunk: Edgerunners",
+      "type": "Animation",
+      "language": "Japanese",
+      "genres": [
+        "Action",
+        "Anime",
+        "Science-Fiction"
+      ],
+      "status": "To Be Determined",
+      "runtime": null,
+      "averageRuntime": 26,
+      "premiered": "2022-09-13",
+      "ended": null,
+      "officialSite": "https://www.netflix.com/title/81054853",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 7.5
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 384541,
+        "imdb": "tt12590266"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1246519.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1246519.jpg"
+      },
+      "summary": "<p>Set in <i>Cyberpunk 2077</i> universe, <b>Cyberpunk: Edgerunners</b> tells a standalone, 10-episode story about a street kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an edgerunner—a mercenary outlaw also known as a cyberpunk.</p>",
+      "updated": 1792755970,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/48945"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3794699",
+          "name": "Then Everyone Went Home"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.4150603,
+    "show": {
+      "id": 919,
+      "url": "https://www.tvmaze.com/shows/919/attack-on-titan",
+      "name": "Attack on Titan",
+      "type": "Animation",
+      "language": "Japanese",
+      "genres": [
+        "Action",
+        "Anime",
+        "Fantasy",
+        "Horror"
+      ],
+      "status": "Ended",
+      "runtime": 25,
+      "averageRuntime": 26,
+      "premiered": "2013-04-07",
+      "ended": "2023-11-05",
+      "officialSite": "http://shingeki.tv/",
+      "schedule": {
+        "time": "00:10",
+        "days": [
+          "Saturday"
+        ]
+      },
+      "rating": {
+        "average": 8.9
+      },
+      "weight": 99,
+      "network": {
+        "id": 281,
+        "name": "NHK",
+        "country": {
+          "name": "Japan",
+          "code": "JP",
+          "timezone": "Asia/Tokyo"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 35298,
+        "thetvdb": 267440,
+        "imdb": "tt2560140"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/632/1582290.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/632/1582290.jpg"
+      },
+      "summary": "<p>Known in Japan as Shingeki no Kyojin, many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!</p>",
+      "updated": 1785657703,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/919"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2643610",
+          "name": "Attack on Titan: The Final Chapters (Part Two)"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.1896813,
+    "show": {
+      "id": 40,
+      "url": "https://www.tvmaze.com/shows/40/death-note",
+      "name": "Death Note",
+      "type": "Animation",
+      "language": "Japanese",
+      "genres": [
+        "Anime",
+        "Fantasy",
+        "Thriller"
+      ],
+      "status": "Ended",
+      "runtime": 30,
+      "averageRuntime": 30,
+      "premiered": "2006-10-03",
+      "ended": "2007-06-26",
+      "officialSite": "http://www.j-deathnote.com/",
+      "schedule": {
+        "time": "13:00",
+        "days": [
+          "Tuesday"
+        ]
+      },
+      "rating": {
+        "average": 8.8
+      },
+      "weight": 98,
+      "network": {
+        "id": 137,
+        "name": "NTV",
+        "country": {
+          "name": "Japan",
+          "code": "JP",
+          "timezone": "Asia/Tokyo"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 13555,
+        "thetvdb": 79481,
+        "imdb": "tt0877057"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/499/1249019.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/499/1249019.jpg"
+      },
+      "summary": "<p><b>Death Note </b>is an anime series based around a manga of the same name whereby a human finds a death god's notebook. Any person's name written in this notebook will die. The main character who finds this noteboook is Light Yagami who faces off against an unfaced character named L who tries to challenge him.</p>",
+      "updated": 1765767086,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/40"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1865",
+          "name": "New World"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.4153279,
+    "show": {
+      "id": 216,
+      "url": "https://www.tvmaze.com/shows/216/rick-and-morty",
+      "name": "Rick and Morty",
+      "type": "Animation",
+      "language": "English",
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Running",
+      "runtime": 30,
+      "averageRuntime": 30,
+      "premiered": "2013-12-02",
+      "ended": null,
+      "officialSite": "http://www.adultswim.com/videos/rick-and-morty",
+      "schedule": {
+        "time": "23:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 8.7
+      },
+      "weight": 100,
+      "network": {
+        "id": 10,
+        "name": "Adult Swim",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.adultswim.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 33381,
+        "thetvdb": 275274,
+        "imdb": "tt2861424"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/626/1566363.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/626/1566363.jpg"
+      },
+      "summary": "<p>Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward, impressionable, and somewhat spineless teenage boy. Rick moves into the family home of Morty, where he immediately becomes a bad influence.</p>",
+      "updated": 1786292785,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/216"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3596684",
+          "name": "Field of Dreams"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.89760077,
+    "show": {
+      "id": 17861,
+      "url": "https://www.tvmaze.com/shows/17861/dark",
+      "name": "Dark",
+      "type": "Scripted",
+      "language": "German",
+      "genres": [
+        "Drama",
+        "Science-Fiction",
+        "Supernatural"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 56,
+      "premiered": "2017-12-01",
+      "ended": "2020-06-27",
+      "officialSite": "https://www.netflix.com/title/80100172",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 8.2
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 334824,
+        "imdb": "tt5753856"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/504/1262352.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/504/1262352.jpg"
+      },
+      "summary": "<p>A family saga with a supernatural twist, <b>Dark</b> is set in a German town in present day where the disappearance of two young children exposes the double lives and fractured relationships among four families.</p>",
+      "updated": 1708789554,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/17861"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1893766",
+          "name": "Das Paradies"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.8974221,
+    "show": {
+      "id": 29,
+      "url": "https://www.tvmaze.com/shows/29/vikings",
+      "name": "Vikings",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "History"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 60,
+      "premiered": "2013-03-03",
+      "ended": "2021-03-05",
+      "officialSite": "https://www.history.ca/shows/vikings/",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Friday"
+        ]
+      },
+      "rating": {
+        "average": 8.6
+      },
+      "weight": 99,
+      "network": {
+        "id": 118,
+        "name": "History",
+        "country": {
+          "name": "Canada",
+          "code": "CA",
+          "timezone": "America/Toronto"
+        },
+        "officialSite": "https://www.history.ca/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 31136,
+        "thetvdb": 260449,
+        "imdb": "tt2306299"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/286/715906.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/286/715906.jpg"
+      },
+      "summary": "<p><b>Vikings</b> transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.</p>",
+      "updated": 1792561518,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/29"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1993646",
+          "name": "The Last Act"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.89760077,
+    "show": {
+      "id": 161,
+      "url": "https://www.tvmaze.com/shows/161/dexter",
+      "name": "Dexter",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Mystery"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 60,
+      "premiered": "2006-10-01",
+      "ended": "2013-09-22",
+      "officialSite": "https://www.sho.com/dexter",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 8.4
+      },
+      "weight": 99,
+      "network": {
+        "id": 9,
+        "name": "Paramount+ with Showtime",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.sho.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 7926,
+        "thetvdb": 79349,
+        "imdb": "tt0773262"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1246067.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1246067.jpg"
+      },
+      "summary": "<p>He's smart, he's good looking, and he's got a great sense of humor. He's Dexter Morgan, everyone's favorite serial killer. As a Miami forensics expert, he spends his days solving crimes, and nights committing them. But Dexter lives by a strict code of honor that is both his saving grace and lifelong burden. Torn between his deadly compulsion and his desire for true happiness, Dexter is a man in profound conflict with the world and himself.</p>",
+      "updated": 1784283681,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/161"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/11691",
+          "name": "Remember the Monsters?"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.4141504,
+    "show": {
+      "id": 41428,
+      "url": "https://www.tvmaze.com/shows/41428/the-queens-gambit",
+      "name": "The Queen's Gambit",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 56,
+      "premiered": "2020-10-23",
+      "ended": "2020-10-23",
+      "officialSite": "https://www.netflix.com/title/80234304",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 8.5
+      },
+      "weight": 97,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 387115,
+        "imdb": "tt10048342"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/510/1275203.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/510/1275203.jpg"
+      },
+      "summary": "<p>Chronicling the life of an orphan chess prodigy, the story - set during the Cold War era - follows Beth Harmon from the age of eight to twenty-two, as she struggles with addiction in a quest to become the greatest chess player in the world.</p>",
+      "updated": 1711287487,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/41428"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1920468",
+          "name": "End Game"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.6903153,
+    "show": {
+      "id": 1369,
+      "url": "https://www.tvmaze.com/shows/1369/marvels-daredevil",
+      "name": "Marvel's Daredevil",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 55,
+      "premiered": "2015-04-10",
+      "ended": "2018-10-19",
+      "officialSite": "https://www.netflix.com/title/80018294",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 8.4
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 38796,
+        "thetvdb": 281662,
+        "imdb": "tt3322312"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/171/429391.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/171/429391.jpg"
+      },
+      "summary": "<p>Matt Murdock, a Marvel Comics hero who's a lawyer by day but fights the bad guys at night to avenge the murder of his father, a boxer. But what sets Matt apart from most superheroes isn't his back story it's his handicap. Matt is blind, the result of a childhood accident that removed his ability to see but gifted him with heightened senses of touch, taste, hearing and smell.</p>",
+      "updated": 1779211540,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/1369"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1548999",
+          "name": "A New Napkin"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.8974221,
+    "show": {
+      "id": 1371,
+      "url": "https://www.tvmaze.com/shows/1371/westworld",
+      "name": "Westworld",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Science-Fiction",
+        "Western"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 63,
+      "premiered": "2016-10-02",
+      "ended": "2022-08-14",
+      "officialSite": "http://www.hbo.com/westworld",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 8.2
+      },
+      "weight": 99,
+      "network": {
+        "id": 8,
+        "name": "HBO",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.hbo.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 37537,
+        "thetvdb": 296762,
+        "imdb": "tt0475784"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/445/1113927.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/445/1113927.jpg"
+      },
+      "summary": "<p><b>Westworld</b> is a dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.</p>",
+      "updated": 1744667671,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/1371"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2326661",
+          "name": "Que Será, Será"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.6048852,
+    "show": {
+      "id": 44778,
+      "url": "https://www.tvmaze.com/shows/44778/house-of-the-dragon",
+      "name": "House of the Dragon",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Fantasy"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 66,
+      "premiered": "2022-08-21",
+      "ended": null,
+      "officialSite": "https://www.hbomax.com/show/c68e69d7-9317-428a-a615-cdf8fe5a2e06/",
+      "schedule": {
+        "time": "21:00",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": 7.6
+      },
+      "weight": 100,
+      "network": {
+        "id": 8,
+        "name": "HBO",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.hbo.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 371572,
+        "imdb": "tt11198330"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/627/1568449.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/627/1568449.jpg"
+      },
+      "summary": "<p>Set 200 years before the events of <i>Game of Thrones, </i><b>House of the Dragon</b> tells the history of House Targaryen as they fight through a civil war.</p>",
+      "updated": 1791048810,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/44778"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3605751",
+          "name": "The Treasons at Tumbleton"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.897152,
+    "show": {
+      "id": 2705,
+      "url": "https://www.tvmaze.com/shows/2705/narcos",
+      "name": "Narcos",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 52,
+      "premiered": "2015-08-28",
+      "ended": "2017-09-01",
+      "officialSite": "https://www.netflix.com/title/80025172",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 8.4
+      },
+      "weight": 98,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 37241,
+        "thetvdb": 282670,
+        "imdb": "tt2707408"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/498/1246087.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/498/1246087.jpg"
+      },
+      "summary": "<p><b>Narcos</b> chronicle the life and death of drug lord Pablo Escobar the ruthless boss of the Medellin Cartel and a known terrorist who was also a congressman, a family man and revered by the poor as a new Robin Hood.</p>",
+      "updated": 1785614653,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/2705"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1285394",
+          "name": "Going Back to Cali"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.7381173,
+    "show": {
+      "id": 59307,
+      "url": "https://www.tvmaze.com/shows/59307/money-heist-korea-joint-economic-area",
+      "name": "Money Heist: Korea - Joint Economic Area",
+      "type": "Scripted",
+      "language": "Korean",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 70,
+      "premiered": "2022-06-24",
+      "ended": "2022-12-09",
+      "officialSite": "https://www.netflix.com/title/80997343",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 6.6
+      },
+      "weight": 86,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 401314,
+        "imdb": "tt13696452"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/430/1076004.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/430/1076004.jpg"
+      },
+      "summary": "<p>Thieves overtake the mint of a unified Korea. With hostages trapped inside, the police must stop them — as well as the shadowy mastermind behind it all.</p>",
+      "updated": 1706989826,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/59307"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2320584",
+          "name": "Episode 12"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.1902256,
+    "show": {
+      "id": 43687,
+      "url": "https://www.tvmaze.com/shows/43687/squid-game",
+      "name": "Squid Game",
+      "type": "Scripted",
+      "language": "Korean",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 59,
+      "premiered": "2021-09-17",
+      "ended": "2025-06-27",
+      "officialSite": "https://www.netflix.com/title/81040344",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 7.9
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 383275,
+        "imdb": "tt10919420"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/576/1440521.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/576/1440521.jpg"
+      },
+      "summary": "<p>Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.</p>",
+      "updated": 1771614207,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/43687"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/3229672",
+          "name": "Humans Are…"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.8976897,
+    "show": {
+      "id": 44933,
+      "url": "https://www.tvmaze.com/shows/44933/severance",
+      "name": "Severance",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Science-Fiction",
+        "Mystery"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 49,
+      "premiered": "2022-02-18",
+      "ended": null,
+      "officialSite": "https://tv.apple.com/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Friday"
+        ]
+      },
+      "rating": {
+        "average": 7.7
+      },
+      "weight": 100,
+      "network": null,
+      "webChannel": {
+        "id": 310,
+        "name": "Apple TV",
+        "country": null,
+        "officialSite": "https://tv.apple.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 371980,
+        "imdb": "tt11280740"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/548/1371406.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/548/1371406.jpg"
+      },
+      "summary": "<p>Mark Scout leads a team at Lumon Industries, whose employees have undergone a severance procedure, which surgically divides their memories between their work and personal lives. This daring experiment in \"work-life balance\" is called into question as Mark finds himself at the center of an unraveling mystery that will force him to confront the true nature of his work… and of himself.</p>",
+      "updated": 1790712623,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/44933"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2939710",
+          "name": "Cold Harbor"
+        }
+      }
+    }
+  },
+  {
+    "score": 1.1904048,
+    "show": {
+      "id": 38963,
+      "url": "https://www.tvmaze.com/shows/38963/the-mandalorian",
+      "name": "The Mandalorian",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 40,
+      "premiered": "2019-11-12",
+      "ended": "2023-04-19",
+      "officialSite": "https://www.disneyplus.com/series/the-mandalorian/3jLIGMDYINqD/",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Wednesday"
+        ]
+      },
+      "rating": {
+        "average": 8.5
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 287,
+        "name": "Disney+",
+        "country": null,
+        "officialSite": "https://www.disneyplus.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 361753,
+        "imdb": "tt8111088"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253498.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/501/1253498.jpg"
+      },
+      "summary": "<p>After the stories of Jango and Boba Fett, another warrior emerges in the Star Wars universe. <b>The Mandalorian</b> is set after the fall of the Empire and before the emergence of the First Order. We follow the travails of a lone gunfighter in the outer reaches of the galaxy far from the authority of the New Republic...</p>",
+      "updated": 1784451169,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/38963"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2494396",
+          "name": "Chapter 24: The Return"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.8974221,
+    "show": {
+      "id": 41007,
+      "url": "https://www.tvmaze.com/shows/41007/loki",
+      "name": "Loki",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science-Fiction"
+      ],
+      "status": "Ended",
+      "runtime": null,
+      "averageRuntime": 50,
+      "premiered": "2021-06-09",
+      "ended": "2023-11-09",
+      "officialSite": "https://disneyplus.com/series/loki/6pARMvILBGzF",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Friday"
+        ]
+      },
+      "rating": {
+        "average": 8.1
+      },
+      "weight": 99,
+      "network": null,
+      "webChannel": {
+        "id": 287,
+        "name": "Disney+",
+        "country": null,
+        "officialSite": "https://www.disneyplus.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 362472,
+        "imdb": "tt9140554"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/478/1195717.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/478/1195717.jpg"
+      },
+      "summary": "<p><b>Loki</b> follows the trickster and shape-shifter god who pops up throughout human history as an unlikely influencer on historical events.</p>",
+      "updated": 1782546389,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/41007"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2648016",
+          "name": "Glorious Purpose"
+        }
+      }
+    }
+  }
+]
